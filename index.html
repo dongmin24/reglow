@@ -5,57 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>리글로우 홈페이지</title>
 
-    <!-- CSS 코드를 HTML 파일 안에 포함시켰습니다 -->
     <style>
-        /* 기본 여백 제거 및 기준 설정 */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
-        /* body 태그는 전체 페이지의 기준이 됩니다 */
         body {
-            /* 특별한 배경색이나 전체 글꼴 설정이 필요하면 여기에 추가 */
+            /* 이미지가 너무 클 경우, PC 화면에서 최대 너비를 지정해 줄 수 있습니다. */
+            /* max-width: 800px; */
+            /* margin: 0 auto; */ /* 위 max-width와 함께 사용하면 가운데 정렬됩니다. */
         }
-
-        /* 이미지들을 감싸는 부모 요소 */
-        .main-content {
-            /* 특별한 스타일링이 필요 없으므로 비워둡니다 */
-        }
-
-        /* 모든 이미지에 적용될 스타일 */
         .main-content img {
-            width: 100%; /* 이미지가 화면 너비를 꽉 채우도록 합니다 */
-            display: block; /* 이미지 아래에 생기는 불필요한 공백을 제거합니다 */
+            width: 100%;
+            display: block;
         }
-
-        /* 화면 하단에 고정될 배너 스타일 */
         .fixed-banner {
-            position: fixed;   /* 스크롤해도 항상 그 자리에 고정 */
-            bottom: 0;         /* 화면 맨 아래에 위치 */
-            left: 0;           /* 화면 왼쪽에 붙여서 시작 */
-            width: 100%;       /* 너비는 화면 전체 */
-            background-color: #a32135; /* 요청하신 배경색 */
-            text-align: center; /* 글자를 가운데로 정렬 */
-            padding: 15px 0;   /* 배너의 위아래 여백을 줘서 덜 답답하게 */
-            z-index: 100;      /* 다른 콘텐츠보다 항상 위에 보이도록 설정 */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #a32135;
+            text-align: center;
+            padding: 15px 0;
+            z-index: 100;
         }
-
-        /* 배너 안의 링크(글자) 스타일 */
         .fixed-banner a {
-            color: white;             /* 글자색은 흰색 */
-            text-decoration: none;    /* 링크의 밑줄을 없앰 */
-            font-size: 16px;          /* 글자 크기 */
-            font-weight: bold;        /* 글자를 굵게 표시 */
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <!-- 홈페이지 본문 이미지들 -->
-    <!-- 'images/' 경로를 삭제해서 같은 폴더에 있는 이미지를 바로 불러옵니다 -->
     <div class="main-content">
+        <!-- 모든 파일 이름을 소문자로 수정했습니다. -->
         <img src="reglow_web_2025072101.jpg" alt="홈페이지 섹션 1">
         <img src="reglow_web_2025072102.jpg" alt="홈페이지 섹션 2">
         <img src="reglow_web_2025072103.jpg" alt="홈페이지 섹션 3">
@@ -65,7 +51,6 @@
         <img src="reglow_web_2025072107.jpg" alt="홈페이지 섹션 7">
     </div>
 
-    <!-- 하단 고정 카카오톡 상담 배너 -->
     <div class="fixed-banner">
         <a href="http://pf.kakao.com/_eTyqn/chat" target="_blank">
             카카오톡 상담 바로 가기
